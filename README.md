@@ -19,3 +19,5 @@ It's pretty common for me to find shorter solutions better, so these tend to be 
 ### Day 1
 
 - [mnml's solution](https://github.com/mnml/aoc/blob/main/2023/01/1.go)
+- [rumkugel3's solution](https://github.com/rumkugel13/AdventOfCode2023/blob/main/day01.go)
+- [stridera's solution](https://www.reddit.com/r/adventofcode/comments/1883ibu/comment/kblptga/)
