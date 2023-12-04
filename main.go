@@ -4,13 +4,15 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	d "aoc/days"
 )
 
 func main() {
 	// Day One
 	numbers := map[string]string{"one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9"}
 
-	inputDayOne, err := os.ReadFile("./input.txt")
+	inputDayOne, err := os.ReadFile("./inputs/input.txt")
 
 	if err != nil {
 		os.Exit(1)
@@ -18,14 +20,14 @@ func main() {
 
 	words := strings.Split(string(inputDayOne), "\n")
 
-	firstResult := DayOnePartOne(words)
-	secondResult := DayOnePartTwo(words, numbers)
+	firstResult := d.DayOnePartOne(words)
+	secondResult := d.DayOnePartTwo(words, numbers)
 
 	fmt.Printf("Day One\n\nFirst Result: %6d\nSecond Result: %5d\n\n", firstResult, secondResult)
 
 	// Day Two
 
-	secondDayInput, err := os.ReadFile("./input2.txt")
+	secondDayInput, err := os.ReadFile("./inputs/input2.txt")
 
 	if err != nil {
 		os.Exit(1)
